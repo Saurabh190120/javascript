@@ -1,0 +1,20 @@
+.bike{
+     /* margin-top:10px ; */
+     margin-bottom: 10px;
+    width: 300px;
+}
+.sec1 ul{
+    list-style: none;
+}
+#show{
+    height: 500px;
+    width: 600px;
+    margin-left: 50%;
+    position:fixed;
+    margin-top: 5%;
+   
+}
+.sec1{
+    display: flex;
+    justify-content: space-between;
+}
