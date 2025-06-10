@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 tabindex="0">This is a class of key events</h1>
+    <input type="text" onkeyup="alert('hello this is key up')">
+    <input type="text" onkeydown="alert('hello this is key down')">
+    <input type="text" onkeypress="alert('hello this is on keypress')">
+    <button onclick="myfunc()">click here</button>
+    <script>
+
+    const myfunc=()=>{
+    alert('this is arrow function')
+    }
+    </script> -->
+  num1: <input type="text" id="num1"> <br>
+  num2: <input type="text" id="num2"> 
+  <button onclick="myfunc1()">add</button>
+  answer: <p id="res"></p>
+  
+  
+
+  <script>
+    p=document.getElementById('res')
+ const myfunc1=()=>{
+    x=parseInt(document.getElementById("num1").value);
+    y=parseInt(document.getElementById("num2").value);
+    z=x+y;
+    console.log(z);
+    p.innerText=z
+    
+ }
+
+  </script>
+
+    
+</body>
+</html>

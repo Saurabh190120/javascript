@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is anan funtion</h1>
+      <button id="btn">click me</button>
+      <input type="text" name="" id="inp">
+      <div id="box" style="height: 50px; width: 50px; background-color: blue;position: relative;">my box</div>
+       
+      <h1 id="first">this</h1>
+      <h1 id="first">odse</h1>
+      <h1 id="first">xdcdd</h1>
+      <h1 id="first">cdde</h1>
+      <h1 id="first">sded</h1>
+      <h2 id="first">this is ddewdewfr34w</h2>
+
+
+    <script>
+        x=[1,1,1,2,22,322,2,2,,5]
+        console.log(x);
+        x.forEach((e,i)=> {
+            console.log(e,i)
+        });
+        y=document.getElementById("btn")
+        console.log(y)
+        y.addEventListener('click',()=>{
+            alert("hello")
+        })
+        box=document.getElementById("box")
+        let pos=10
+   
+        z=document.getElementById("inp")
+        console.log(z)
+        z.addEventListener('keyup',(e)=>{
+            if(e.code==='KeyA'){
+                // alert("press A")
+                box.style.left=pos+"px";
+                pos+=10;
+                // if(pos==100){
+                //     alert("game over")
+                // }
+            }
+            // console.log(e.code)
+        })
+        q=document.querySelectorAll("#first")
+        q.forEach(Element=>{
+            Element.style.backgroundColor="red"
+        })
+    </script>
+</body>
+</html>
