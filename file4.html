@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript map function</h1>
+    <input type="email" id="email" placeholder="email"><br>
+     <input type="password" id="password" placeholder="password"><br>
+     <button onclick="login_user()">login</button>
+    <script>
+        // // let arr=["ram","shdeer","dfefer","DWded","edeferf"]
+        // let arr=[1,2,3,4,5,6,7,8,9,10]
+        // // console.log(typeof(arr))
+        // let sum=0
+        // arr.map((e)=>{
+        //     sum=sum+e
+        // })
+        // console.log(sum)
+     
+    let user_email=["email1","email2","email3",'email4','email5']
+    let user_pass=["p1","p2","p3",'p4','p5']
+    const login_user=()=>{
+        let user_input_email=document.getElementById("email").value;
+        let user_input_password=document.getElementById("password").value;
+        //  console.log(user_input_email)
+         let ind=user_email.findIndex(e=>e===user_input_email)
+        //  console.log(user_pass[ind])
+         if(user_input_email===user_email[ind]&&user_input_password===user_pass[ind]){
+            console.log("login")
+         }
+         else{
+            console.log("invalid email")
+         }
+    }
+
+    </script>
+</body>
+</html>

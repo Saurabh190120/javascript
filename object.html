@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+
+
+
+
+    <script>
+        // let arr=["ram",'shyam,','rahul']
+        // let x=document.getElementById('div')
+        // let y=arr.find((e)=>{return e==="ram"})
+        // x.innerHTML=y
+    //    let symb=Symbol('key3')
+    //     let myobj={
+    //         fname:'saurabh',
+    //         lname:'chaudhary',
+    //         age:21,
+    //         "key":"value"
+    //         [symb]="value3"
+    //     }
+    //     console.log(myobj.fname)
+    //     // console.log(myobj["fname"])
+    //     // Object.freeze(myobj)
+    //     //   myobj.age=333
+    //     console.log(myobj.key)
+    //      console.log(myobj)
+    //     // let myobj1=new Object();// both type of create an object
+
+
+   let myobj={
+          "key1":"value1",
+         "key2":"value1",
+            "key3":"value1",
+             "key4":"value1",
+              "key5":"value1"
+
+        
+        }
+         let myobj1={
+           "key6":"value1",
+            "key7":"value1"
+        }
+        let obj3={...myobj,...myobj1}
+        console.log(obj3)
+        let obj4= Object.assign({}, myobj,myobj1)
+         console.log(obj4)
+       
+    </script>
+</body>
+</html>

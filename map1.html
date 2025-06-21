@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> map and template literal</h1>
+    <div id="box">
+
+    </div>
+    <script>
+        // let arr= [1,2,3,4,5,6,7,8,9,10]
+        // const arr1=arr.map((e)=>{
+        //     console.log(e)
+        // })
+        //  const box = document.querySelector("#box")
+        //  const data="welcome to bhopal"
+        //  const img1="bajaj freedom 4.jpg"
+        //  box.innerHTML=` <h1> this is heading 1</h1>
+        //  <h2>this is heading 2</h2>
+        //  <h3>${data} </h3> 
+        //  <img src="${img1}" alt="image" id="img"/> `
+        //   a=document.getElementById("img")
+        //   a.addEventListener("click",()=>{
+        //      alert("this is image")
+        //   })
+         const box = document.querySelector("#box")
+         console.log(box)
+        const img=["bajaj freedom 4.jpg","Bajaj_Freedom_125_.avif","Bajaj_Freedom1.webp"]
+         
+        const myimg=img.map((e)=>{
+          return`
+             <img src="${e}" alt="image" onClick=alert("hii") width="100px" height="100px" >
+              `
+        })
+        box.innerHTML= myimg
+
+    </script>
+</body>
+</html>
