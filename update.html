@@ -14,7 +14,7 @@
     password: <input type="text" id="password"><br>
     <input type="submit" value="update"> 
 </form>
-
+     <button onclick="print1()">print</button>
     <script>
         let islogin =JSON.parse(localStorage.getItem("islogin"))
         console.log(islogin)
@@ -32,12 +32,31 @@
          password:document.getElementById('password').value 
        }
        console.log(updatedata)
+         
+       user=user.map((u)=>{
+        if(islogin.email===u.email){
+             return updatedata;
+
+        }
+        return u;
+        
+       })
+          //  console.log(updatedata)
+           localStorage.setItem('user',JSON.stringify(user))
+           localStorage.setItem('islogin',JSON.stringify(updatedata))
+           window.location.href='/userdashboard.html'
         })
 
         
-        
-        
-        
+        const print1=()=>{
+          window.print()
+        }
+        // setTimeout(()=>{
+        //   alert("hello")
+        // },2000)
+        // setInterval(()=>{
+        //   alert("setinterval")
+        // },3000)
         </script>
 </body>
 </html>
