@@ -1,0 +1,9 @@
+#cloth{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    border: 5px double black;
+    gap: 30px;
+    
+}
