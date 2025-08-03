@@ -32,9 +32,9 @@ let shirt =document.getElementById("cloth")
 shirt.innerHTML=data.map((obj)=>{
     return `
 
-    <div style="height: 550px; width: 500px; border: 4px solid red;  display: flex;
+    <div style="height: 600px; width: 500px; border: 4px solid red;  display: flex;
     
-    flex-direction: column; align-items: center;">
+    flex-direction: column; align-items: center; background-color: aquamarine;" id="inner">
              <h3>title:${obj.title}</h3>
             <p>Brand:${obj.brand}</p>
              <p>category:${obj.category}</p>
@@ -54,3 +54,15 @@ shirt.innerHTML=data.map((obj)=>{
 
  })
 })
+
+let cart=document.getElementById("cart")
+let price=0;
+window.Addproduct=(p,i)=>{
+    price=price+p;
+    cart.innerHTML=price;
+    
+}
+window.Removeproduct=(p)=>{
+    price=price-p;
+    cart.innerHTML=price;
+}

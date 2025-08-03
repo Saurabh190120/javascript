@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>here db json is use</h1>
+    <div id="product"></div>
+    <button onclick="getallproduct()">getalldata</button>
+    <form action="">
+        <fieldset>
+            <legend>DATA ADD</legend>
+           title: <input type="text" id="title"><br>
+           price: <input type="text"  id="price"><br>
+           <button onclick="adddata()">ADD DATA</button>
+        </fieldset>
+    </form>
+
+     <form action="">
+        <fieldset>
+            <legend>DATA UPDATE</legend>
+            ID: <input type="text"  id="id"><br>
+           title: <input type="text" id="utitle"><br>
+           price: <input type="text"  id="uprice"><br>
+           <button onclick="updatedata()">UPDATE DATA</button>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>DELETE UPDATE</legend>
+            ID: <input type="text"  id="did"><br>
+        
+           <button onclick="deletedata()">DELETE DATA</button>
+        </fieldset>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>   

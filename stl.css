@@ -1,9 +1,25 @@
 #cloth{
+    width: 50%;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    /* flex-direction: column;  */
+    flex-wrap: wrap;
     align-items: center;
     border: 5px double black;
     gap: 30px;
     
+}
+#inner{
+    box-shadow: 10px 10px 12px blanchedalmond;
+}
+
+#outer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cart{
+     border: 5px double black;
+     height: fit-content;
+     width: fit-content;
 }
