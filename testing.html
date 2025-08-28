@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Change</title>
+</head>
+<body>
+  <h2>Pick a Color to Change Background</h2>
+
+ 
+  <input type="color" id="colorPicker" />
+
+  <script>
+    const colorInput = document.getElementById("colorPicker");
+
+    colorInput.addEventListener("input", function () {
+      document.body.style.backgroundColor = this.value;
+    });
+  </script>
+</body>
+</html> -->
+
+
+<!-- second way -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Change</title>
+</head>
+<body>
+  <h2>Pick a Color to Change Background</h2>
+
+  <!-- Color input -->
+  <input type="color" id="colorPicker"  />
+
+  <script>
+    const colorInput = document.getElementById("colorPicker");
+
+    // Using arrow function
+    colorInput.addEventListener("input", (event) => {
+      document.body.style.backgroundColor = event.target.value;
+    });
+  </script>
+</body>
+</html>
